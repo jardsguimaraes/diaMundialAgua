@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+:root {
+  --bege: #e6e0d6;
+  --cor-button-hover: #0056b3;
+  --cor-button: #007bff;
+  --cor-button-text: #fff;
+  --cor-texto-dark: #fff;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  height: 4000px;
+  text-align: center;
+  padding: 0px;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--cor-button);
+  border-color: var(--cor-button);
+  box-shadow: none;
+  outline: none;
+}
+
+.banners {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banners-titulo {
+  --bs-bg-opacity: 0.2;
+}
+
+.banner-1 {
+  background-image: url(/assets/banner\ 1.png);
+}
+
+.banner-2 {
+  background-image: url(/assets/banner\ 2.png);
+}
+
+.banner-3 {
+  background-image: url(/assets/banner\ 3.png);
+}
+
+#curiosidadeCard {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+#curiosidadeTexto {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.botao-padrao {
+  background-color: var(--cor-button);
+  color: var(--cor-button-text);
+}
+
+.botao-padrao:hover {
+  background-color: var(--cor-button-hover);
+}
+
+.botao-padrao {
+  background-color: var(--cor-button);
+  color: var(--cor-button-text);
+}
+
+.botao-padrao:hover {
+  background-color: var(--cor-button-hover);
+}
+
+.comentario {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.caixa {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 240px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.caixa:hover {
+  transform: scale(1.05);
+}
+
+.caixa .usuario {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  margin-bottom: 15px;
+}
+
+.caixa h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.caixa p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.card h2 {
+  color: #00aaff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.participants-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.participants-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.participant-card {
+  width: 120px;
+  text-align: center;
+}
+
+.participant-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  object-fit: cover;
+}
+
+.participant-card p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#participante-oculto {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .comentario {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .banner-1 {
+    background-position: top;
+    background-attachment: unset;
+  }
+  .banner-2 {
+    background-position: top;
+    background-attachment: unset;
+  }
+  .banner-3 {
+    background-position: top;
+    background-attachment: unset;
+  }
+
+  main {
+    padding-top: 115px;
+  }
+  .caixa {
+    width: 90%;
+  }
+
+}
+
+.input-range::-webkit-slider-thumb {
+  background-color: var(--cor-button);
+}
+
+.rodape {
+  background-color: var(--cor-button);
+}
+
+[data-bs-theme="dark"] {
+  color:white;
+
+  .nav-link,
+  .card-body,
+  .offcanvas,
+  .accordion,
+  .btn {
+    --bs-nav-link-color: white;
+    --bs-card-color: white;
+    --bs-offcanvas-color: white;
+    --bs-body-color: white;
+  }
+}
